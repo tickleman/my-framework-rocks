@@ -1,0 +1,15 @@
+{
+	"authors":     [{ "name": "tickleman",  "email": "your@email.com" }],
+	"description": "Description of the my-framework-rocks project",
+	"extra": {
+		"installer-paths": { "{$vendor}/{$name}/": ["type:itrocks"] },
+		"installer-types": ["itrocks"]
+	},
+	"license":           "MIT",
+	"minimum-stability": "dev",
+	"name":              "tickleman/my-framework-rocks",
+	"prefer-stable":     true,
+	"repositories":      [{ "type": "composer", "url": "https://packages.bappli.com" }],
+	"require":           { "itrocks/framework": "dev-master" },
+	"type":              "itrocks-final"
+}
