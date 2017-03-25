@@ -1,0 +1,62 @@
+#main > .comparison {
+	color: #333;
+
+	> .snippet {
+		display: block;
+		text-align: center;
+	}
+
+	> .sides {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		margin: 0 -1em;
+		padding: 0;
+
+		> * {
+			display: table-cell;
+			flex: auto;
+			margin: 0;
+			padding: 1em;
+
+			> .author {
+				color: #333;
+				font-style: italic;
+
+				> a {
+					font-weight: bold;
+					text-decoration: none;
+
+					&:hover {
+						color: #633;
+					}
+				}
+			}
+
+			> ul.files {
+				list-style: none;
+				padding: 0;
+
+				> li {
+					margin: 0;
+				}
+			}
+		}
+
+		> .left {
+			border-right: 1px solid #333;
+			padding-right: 1em;
+			text-align: right;
+
+			> ul.files {
+				display: inline-block;
+				text-align: left;
+
+				li {
+					display: block;
+				}
+			}
+		}
+	}
+
+}

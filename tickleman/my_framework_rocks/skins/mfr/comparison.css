@@ -1,0 +1,38 @@
+#main > .comparison {
+  color: #333; }
+  #main > .comparison > .snippet {
+    display: block;
+    text-align: center; }
+  #main > .comparison > .sides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 -1em;
+    padding: 0; }
+    #main > .comparison > .sides > * {
+      display: table-cell;
+      flex: auto;
+      margin: 0;
+      padding: 1em; }
+      #main > .comparison > .sides > * > .author {
+        color: #333;
+        font-style: italic; }
+        #main > .comparison > .sides > * > .author > a {
+          font-weight: bold;
+          text-decoration: none; }
+          #main > .comparison > .sides > * > .author > a:hover {
+            color: #633; }
+      #main > .comparison > .sides > * > ul.files {
+        list-style: none;
+        padding: 0; }
+        #main > .comparison > .sides > * > ul.files > li {
+          margin: 0; }
+    #main > .comparison > .sides > .left {
+      border-right: 1px solid #333;
+      padding-right: 1em;
+      text-align: right; }
+      #main > .comparison > .sides > .left > ul.files {
+        display: inline-block;
+        text-align: left; }
+        #main > .comparison > .sides > .left > ul.files li {
+          display: block; }
