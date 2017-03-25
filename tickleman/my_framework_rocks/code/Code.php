@@ -2,7 +2,7 @@
 namespace Tickleman\My_Framework_Rocks;
 
 use ITRocks\Framework\Mapper\Component;
-use ITRocks\Framework\User;
+use Tickleman\My_Framework_Rocks\Code\Author;
 use Tickleman\My_Framework_Rocks\Code\File;
 use Tickleman\My_Framework_Rocks\Code\Snippet;
 use Tickleman\My_Framework_Rocks\Code\Variant;
@@ -11,7 +11,7 @@ use Tickleman\My_Framework_Rocks\Code\Variant;
  * Some code
  *
  * @display_order snippet, framework, variant, author, code
- * @representative snippet.name, framework.framework.name, framework.version, variant.name
+ * @representative framework, variant
  * @set Snippet_Codes
  */
 class Code
@@ -22,7 +22,7 @@ class Code
 	/**
 	 * @link Object
 	 * @mandatory
-	 * @var User
+	 * @var Author
 	 */
 	public $author;
 

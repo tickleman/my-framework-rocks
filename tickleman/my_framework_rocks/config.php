@@ -1,9 +1,10 @@
 <?php
 namespace Tickleman\My_Framework_Rocks;
 
+use ITRocks\Framework;
 use ITRocks\Framework\Configuration;
 use ITRocks\Framework\Plugin\Priority;
-use ITRocks\Framework\Widget\Menu;
+use ITRocks\Framework\View;
 
 global $loc;
 require __DIR__ . '/../../loc.php';
@@ -15,8 +16,12 @@ $config['Tickleman/My_Framework_Rocks'] = [
 	Configuration::EXTENDS_APP => 'ITRocks/Framework',
 
 	Priority::NORMAL => [
-		Menu::class => [
-			Menu::TITLE => [SL, 'Home', '#main'],
+		Framework\Tools\Wiki::class,
+		Framework\View::class => [
+			View\Html\Engine::CSS => 'mfr'
+		],
+		Framework\Widget\Menu::class => [
+			Framework\Widget\Menu::TITLE => [SL, 'Home', '#main'],
 			'Code snippets' => [
 				'/Tickleman/My_Framework_Rocks/Code/Snippets' => 'Code snippets',
 				'/Tickleman/My_Framework_Rocks/Code/Files'    => 'Code snippet files'
